@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- owl stylesheets -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -35,6 +36,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <!-- body -->
+
 <body class="main-layout">
     <!-- header section start -->
     <div class="header_section header_main">
@@ -75,7 +77,7 @@
                 u otros conjuntos de instrucciones para que sean ejecutadas por los ordenadores.</p>
             <div class="collection_section_2">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="zoom-in">
                         <div class="about-img">
                             <div class="shoes-img"><img src="images/Java.png"></div>
                         </div>
@@ -91,13 +93,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about-img">
-                            <div class="shoes-img"><img src="images/Python.png" alt="" width="225" height="225"></div>
+                            <div class="shoes-img"><img src="images/Python.png" data-aos="zoom-out-right" alt="" width="225" height="225"></div>
                         </div>
                         <button class="seemore_bt">Python</button>
                     </div>
                     <div class="col-md-6">
                         <div class="about-img">
-                            <div class="shoes-img"><img src="images/C++.png" alt="" width="225" height="225"></div>
+                            <div class="shoes-img"><img src="images/C++.png" data-aos="zoom-out-left" alt="" width="225" height="225"></div>
                         </div>
                         <button class="seemore_bt">C++</button>
                     </div>
@@ -105,14 +107,14 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about-img">
-                            <div class="shoes-img"><img src="images/Javascript.png" alt="" width="225" height="225">
+                            <div class="shoes-img"><img src="images/Javascript.png" data-aos="zoom-out-right" alt="" width="225" height="225">
                             </div>
                         </div>
                         <button class="seemore_bt">Javascript</button>
                     </div>
                     <div class="col-md-6">
                         <div class="about-img">
-                            <div class="shoes-img"><img src="images/Php.png" alt="" width="225" height="225"></div>
+                            <div class="shoes-img"><img src="images/Php.png" data-aos="zoom-out-left" alt="" width="225" height="225"></div>
                         </div>
                         <button class="seemore_bt">Php</button>
                     </div>
@@ -125,8 +127,9 @@
     <div class="copyright">2021 All Rights Reserved.</div>
 
     <!--CUSTOM JS-->
-	<script src="Main/sweetalert2.all.min.js"></script>
+    <script src="Main/sweetalert2.all.min.js"></script>
     <script src="Main/AlertaLen.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
@@ -171,6 +174,9 @@
                     $(this).off("touchmove");
                 });
             });
+    </script>
+    <script>
+            AOS.init();
     </script>
 </body>
 
